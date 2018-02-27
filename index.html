@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en-us">
+    <head> 
+        <title>First web template from w3schools</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+<!--CSS style-->
+        
+    <style>
+         * {
+    box-sizing: border-box;
+}
+
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header{
+        padding:80px;
+        text-align:center;
+        background: #1abc9c;
+        color:white;
+    }
+
+    .header h1{ 
+        font-size: 50px;
+    }
+
+    /* style the navigation bar */
+    .nav-bar{
+       background-color: #333;
+       overflow: hidden;}
+
+    .nav-bar a {
+        float: left;
+        display:block;
+        color:white;
+        padding: 14px 20px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .nav-bar a.right{
+        float:right; 
+    }
+    /* Change color on hover/mouse-over */
+.nav-bar a:hover {
+    background-color: #ddd; /* Grey background color */
+    color: black; /* Black text color */
+} 
+
+.row { 
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    .side{ flex: 30%;
+    background-color:grey;
+    padding: 20px;
+    }
+
+    .main {flex: 70%;
+    background-color: white;
+    padding:20px; }
+    @media (max-width: 700px) {
+    .row { 
+        flex-direction: column;
+    }
+}
+@media (max-width: 400px) {
+    .nav-bar {
+    float:none;
+    width: 100%;}
+}
+.footer {
+    padding: 20px; /* Some padding */
+    text-align: center; /* Center text*/
+    background: #ddd; /* Grey background */
+}
+    </style>
+
+<!-- Body Starts-->
+
+    <body>
+        <!--header-->
+       <div class="header">
+ 
+       <h1> My portfolio</h1>
+       <p> This is a webpage that I built with the help of w3school. This is the first time I actually understood what padding meant.</p>
+       </div>
+      <!-- navigation bar -->
+    <div class="nav-bar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact me</a>
+      <a href="#" class="right">Bottom</a> 
+      
+      <!-- main content-->
+    </div>
+    <div class="row">
+        <div class="side"> side </div>
+        <div class="main"> <p><strong>Note : </strong> the resonsive design doesn't seem to work properly, to get the 30% and 70% ration it was necessary to add a code called "box-sizing: border-box". It wasn't on the page that I copied from but the code was on "try it yourself". I wasn't getting two columns one on side and one on main before this one so I will have to figure out what does that code do. This is literally me just copying and trying to understand the code as I write it from w3schools.
+        </p> </div>
+    </div>
+<!-- footer -->
+<div class="footer">
+        <h2>Footer</h2>
+        
+      </div>
+
+    </body>
+</html>
